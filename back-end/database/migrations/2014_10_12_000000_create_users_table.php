@@ -22,6 +22,44 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        Schema::create('videos', function (Blueprint $table) {
+            $table->id();
+            $table->string('video_name');
+            $table->string('littledescription');
+            $table->string('bigdescription');
+            $table->string('link');
+            $table->rememberToken();
+        });
+
+        Schema::create('students', function (Blueprint $table) {
+            $table->id();
+            $table->string('bulletin');
+            $table->string('motivation');
+            $table->string('results');
+            $table->string('personnality');
+            $table->string('otheractivities');
+            $table->rememberToken();
+        });
+
+        Schema::create('formation', function (Blueprint $table) {
+            $table->id();
+            $table->string('formation_name');
+            $table->string('school_name');
+            $table->string('formation_type');
+            $table->string('department');
+            $table->string('long_formation_name');
+            $table->rememberToken();
+        });
+
+        Schema::create('events', function (Blueprint $table) {
+            $table->id();
+            $table->string('date');
+            $table->string('event_name');
+            $table->string('adress');
+            $table->string('hour');
+            $table->rememberToken();
+        });
     }
 
     /**

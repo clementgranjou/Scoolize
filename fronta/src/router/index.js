@@ -4,22 +4,23 @@ import Page3 from '../views/Page3.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/calendar',
     name: 'Home',
     component: Home
   },
   {
-    path: '/about',
+    path: '/etudiants',
+    name: 'Page3',
+    component: Page3
+  },
+
+  {
+    path: '/videos',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path:"/pagfksdfsdfsde3",
-    name:'Page3',
-    component : Page3
   }
 ]
 
