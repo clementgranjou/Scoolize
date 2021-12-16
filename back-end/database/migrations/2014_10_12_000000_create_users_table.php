@@ -49,6 +49,7 @@ class CreateUsersTable extends Migration
             $table->string('formation_type');
             $table->string('department');
             $table->string('long_formation_name');
+            $table->string('category');
             $table->rememberToken();
         });
 

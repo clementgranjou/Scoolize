@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation">
+    <div class="shadow-2xl bg-white rounded-2xl fixed bottom-2  justify-around w-full flex">
         <router-link :to="{ name: 'Home' }"
             ><img :src="require('../assets/calendar.png')" alt="image de calendrier"
         /></router-link>
@@ -19,18 +19,16 @@ export default {
 </script>
 
 <style>
-.navigation {
+/* .navigation {
     display: flex;
-    justify-content: space-around;
-    background-color: #ffff;
-    border-radius: 20px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    justify-content: space-around; 
+    */
     /* mettre en bas */
-    bottom: 10px;
-    position: absolute;
+    /* bottom: 10px;
+    position: sticky;
     right: 10px;
     left: 10px;
-}
+} */
 img {
     padding: 20px;
 }

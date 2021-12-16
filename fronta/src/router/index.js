@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Page3 from '../views/Page3.vue'
+import Form from '../views/Form.vue'
+import Upload from '../views/Upload.vue'
 
 const routes = [
   {
@@ -9,7 +11,17 @@ const routes = [
     component: Home
   },
   {
-    path: '/etudiants',
+    path: '/upload',
+    name: 'Upload',
+    component: Upload
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: Form
+  },
+  {
+    path: '/',
     name: 'Page3',
     component: Page3
   },

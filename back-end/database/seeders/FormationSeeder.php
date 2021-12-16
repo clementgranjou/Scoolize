@@ -28,6 +28,8 @@ class FormationSeeder extends Seeder
 
             'long_formation_name' => "Epitech Digital, l'école de la trasformation digitale",
 
+            'category' => "Informatique",
+
          ]);
 
          DB::table('formation')->insert([  
@@ -43,6 +45,8 @@ class FormationSeeder extends Seeder
             'department' => 'Gironde',
 
             'long_formation_name' => "Faculté de droit et science politique - Université de Bordeaux",
+
+            'category' => "Droit",
 
          ]);
  

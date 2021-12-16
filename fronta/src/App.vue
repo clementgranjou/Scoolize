@@ -1,10 +1,10 @@
-<template>
+/*<template>
     <div class="header">
         <router-link :to="{ name: 'About' }">
             <img :src="require('../src/assets/notification.png')" class="img_class" alt="image de vidéo" />
         </router-link>
         <h1 v-if="dateDisplay" class="font-semibold place-self-center">{{ dateDisplay }}</h1>
-        <router-link :to="{ name: 'About' }">
+        <router-link :to="{ name: 'Upload' }">
             <img :src="require('../src/assets/profil.png')" class="img_class" alt="image de vidéo"
         /></router-link>
     </div>

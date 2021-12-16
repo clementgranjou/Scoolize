@@ -6,7 +6,7 @@
             
                <a :href="video.link" ><img class="p-0 w-full rounded-xl" :src="require(`../assets/miniature${video.id}.jpg`)" alt="image" /></a> 
                 <p class="text-gray-900 font-bold text-xl my-3">{{ video.video_name }}</p>
-                <p class="text-gray-700 text-base my-2">{{ video.bigdescription }}</p>           
+                <p class="text-gray-700 text-base my-2 ">{{ video.bigdescription }}</p>           
         </div>
 
         <!-- <div
